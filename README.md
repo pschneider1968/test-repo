@@ -1,3 +1,3 @@
 # Test repository
 
-I use this repo to learn git basics ;-)
+I use this repo to learn Git and GitHub basics ;-)
