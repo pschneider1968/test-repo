@@ -30,8 +30,6 @@ jobs:
           ls -l $ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt/linux-x86_64
           echo -e "Android toolchain bin directory:\n"
           ls -l $ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin
-      - name: Error demo
-        run:  exit 1
       - name: Run Android NDK clang++ compiler
         run: |
           export PATH=$ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
