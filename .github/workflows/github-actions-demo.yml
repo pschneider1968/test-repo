@@ -16,6 +16,14 @@ jobs:
           ls ${{ github.workspace }}
       - name: Explore environment
         run: |
-          echo $PATH
-          echo $ANDROID_NDK_LATEST_HOME
+          echo "Path:" $PATH
+          echo "ANDROID_NDK_LATEST_HOME:" $ANDROID_NDK_LATEST_HOME
+          echo "which gcc:"; which gcc
+          echo "gcc version:"; gcc --version
+          echo "which g++:"; which g++
+          echo "g++ version:"; g++ --version
+          echo "which clang:"; which clang
+          echo "clang version:"; clang --version
+          echo "which clang++:"; which clang++
+          echo "clang++ version:"; clang++ --version
       - run: echo "🍏 This job's status is ${{ job.status }}."
