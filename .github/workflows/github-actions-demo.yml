@@ -26,4 +26,6 @@ jobs:
           echo "clang version:"; clang --version
           echo "which clang++:"; which clang++
           echo "clang++ version:"; clang++ --version
+          echo "Android toolchain directory:\n"
+          ls -l $ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt
       - run: echo "🍏 This job's status is ${{ job.status }}."
