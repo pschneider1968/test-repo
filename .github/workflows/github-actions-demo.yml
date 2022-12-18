@@ -13,7 +13,7 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls -lisa ${{ github.workspace }}
       - name: Explore environment
         run: |
           echo "Path:" $PATH
@@ -26,7 +26,6 @@ jobs:
           echo "clang version:"; clang --version
           echo "which clang++:"; which clang++
           echo "clang++ version:"; clang++ --version
-          echo "lld version:"; lld --version
           echo -e "Android toolchain directory:\n"
           ls -l $ANDROID_NDK_LATEST_HOME/toolchains/llvm/prebuilt/linux-x86_64
           echo -e "Android toolchain bin directory:\n"
