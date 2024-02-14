@@ -1,0 +1,5 @@
+This is a second text file for testing.
+
+I added this text file for a test case debugging an authentication issue.
+
+-- Peter
